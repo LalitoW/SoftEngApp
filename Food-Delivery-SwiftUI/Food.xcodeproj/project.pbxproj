@@ -25,6 +25,7 @@
 		0621B66C2B85306F00881E6B /* ListaDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621B6692B85306F00881E6B /* ListaDetalle.swift */; };
 		0621B66D2B85306F00881E6B /* ListaCont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621B66A2B85306F00881E6B /* ListaCont.swift */; };
 		0621B66E2B85306F00881E6B /* ListaVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621B66B2B85306F00881E6B /* ListaVista.swift */; };
+		063CE9B82BD1BF5500DAADFE /* CommentBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063CE9B72BD1BF5500DAADFE /* CommentBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		0621B6692B85306F00881E6B /* ListaDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDetalle.swift; sourceTree = "<group>"; };
 		0621B66A2B85306F00881E6B /* ListaCont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaCont.swift; sourceTree = "<group>"; };
 		0621B66B2B85306F00881E6B /* ListaVista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaVista.swift; sourceTree = "<group>"; };
+		063CE9B72BD1BF5500DAADFE /* CommentBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				0443640824BCBB5200973BE7 /* Meal.swift */,
 				04F7A95124BDE604004123D7 /* OurPicks.swift */,
 				0457F33224BE409400682CD3 /* CheckOut.swift */,
+				063CE9B72BD1BF5500DAADFE /* CommentBox.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				04F7A95224BDE604004123D7 /* OurPicks.swift in Sources */,
 				04695B8724BB47DE006E6728 /* NavBar.swift in Sources */,
 				04695B7324BB46DC006E6728 /* ContentView.swift in Sources */,
+				063CE9B82BD1BF5500DAADFE /* CommentBox.swift in Sources */,
 				0621B6682B85305B00881E6B /* estudiante.swift in Sources */,
 				04C0197724BBAEF0006050B8 /* Location.swift in Sources */,
 				0621B66D2B85306F00881E6B /* ListaCont.swift in Sources */,
