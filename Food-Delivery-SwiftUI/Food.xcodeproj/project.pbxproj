@@ -43,7 +43,7 @@
 		04C0197A24BBC848006050B8 /* TrendingWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingWeek.swift; sourceTree = "<group>"; };
 		04C0197D24BBD003006050B8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		04C0197F24BBDCC0006050B8 /* onBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingPage.swift; sourceTree = "<group>"; };
-		04F7A95124BDE604004123D7 /* OurPicks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPicks.swift; sourceTree = "<group>"; };
+		04F7A95124BDE604004123D7 /* OurPicks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OurPicks.swift; path = "/Users/fernandahernandez/Desktop/Projecto software/SoftEngApp/Food-Delivery-SwiftUI/Food/Views/OurPicks.swift"; sourceTree = "<absolute>"; };
 		0621B6672B85305B00881E6B /* estudiante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = estudiante.swift; sourceTree = "<group>"; };
 		0621B6692B85306F00881E6B /* ListaDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDetalle.swift; sourceTree = "<group>"; };
 		0621B66A2B85306F00881E6B /* ListaCont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaCont.swift; sourceTree = "<group>"; };
