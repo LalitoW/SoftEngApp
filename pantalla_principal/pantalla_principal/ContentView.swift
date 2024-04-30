@@ -1,21 +1,32 @@
-//
-//  ContentView.swift
-//  pantalla_principal
-//
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text("Buenos días")
-                .font(.title)
-                .padding(.top, 20)
-                .padding(.leading, 20)
-            
-            RectangleItem(name: "Hamburguesa Americas", price: "$55.00", imageName: "hamburguesa")
-            RectangleItem(name: "Chapata", price: "$65", imageName: "chapata")
-            RectangleItem(name: "Sandwich", price: "$45", imageName: "sandwich")
-            RectangleItem(name: "Chilaquiles", price: "$25", imageName: "chilaquiles")
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Buenos días")
+                    .font(.title)
+                    .padding(.top, 20)
+                    .padding(.leading, 20)
+                
+                NavigationLink(destination: DetalleView(item: MenuItem(name: "Hamburguesa Americas", price: "$55.00", imageName: "hamburguesa", description: "Pan de hamburguesa Carne de res molida, Queso cheddar,Lechuga,TomateMayonesa"))) {
+                    RectangleItem(name: "Hamburguesa Americas", price: "$55.00", imageName: "hamburguesa")
+                }
+                
+                NavigationLink(destination: DetalleView(item: MenuItem(name: "Chapata", price: "$65", imageName: "chapata", description:
+                                                                        "Pan chapata,Jamón,Queso,Tomate,Lechuga,Mayonesa"))) {
+                    RectangleItem(name: "Chapata", price: "$65", imageName: "chapata")
+                }
+                
+                NavigationLink(destination: DetalleView(item: MenuItem(name: "Sandwich", price: "$45", imageName: "sandwich", description: "Pan,Jamon,Lechuga,Mayonesa,Queso Amarillo"))) {
+                    RectangleItem(name: "Sandwich", price: "$45", imageName: "sandwich")
+                }
+                
+                NavigationLink(destination: DetalleView(item: MenuItem(name: "Chilaquiles", price: "$25", imageName: "chilaquiles", description: "Tortillas,Salsa,Queso,Crema,Pollo"))) {
+                    RectangleItem(name: "Chilaquiles", price: "$25", imageName: "chilaquiles")
+                }
+            }
+            .navigationBarTitle("Menú")
         }
     }
 }
@@ -39,8 +50,6 @@ struct RectangleItem: View {
                     
                     Text(price)
                         .foregroundColor(.black)
-                    
-
                     
                     Button(action: {
                         // Acción cuando se presiona el botón
@@ -70,10 +79,43 @@ struct RectangleItem: View {
     }
 }
 
+struct DetalleView: View {
+    var item: MenuItem
+    
+    var body: some View {
+        VStack {
+            Image(item.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding()
+            
+            Text(item.name)
+                .font(.title)
+                .padding()
+            
+            Text(item.price)
+                .font(.headline)
+                .padding()
+            
+            Text(item.description)
+                .padding()
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
+        }
+        .navigationBarTitle(item.name)
+    }
+}
 
+struct MenuItem {
+    var name: String
+    var price: String
+    var imageName: String
+    var description: String
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
